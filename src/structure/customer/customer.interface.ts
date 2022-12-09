@@ -1,3 +1,4 @@
+import { Types } from 'mongoose';
 export enum gender {
     male = 'M',
     female = 'FM',
@@ -15,7 +16,7 @@ export interface CustomerData {
     dob: Date;
     color: string;
     photo: string;
-    _id: string;
+    _id: Types.ObjectId;
 }
 
 export interface CustomerModel extends Document, CustomerData {}

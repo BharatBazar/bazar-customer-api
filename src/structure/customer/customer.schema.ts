@@ -13,6 +13,7 @@ const CustomerSchema: Schema = new Schema({
     dob: Date,
     color: String,
     photo: String,
+    budget: String, //This is different for every thing
 });
 
 export const Customer: Model<CustomerModel> = model<CustomerModel>('Customer', CustomerSchema);
