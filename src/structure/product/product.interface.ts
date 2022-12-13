@@ -1,4 +1,4 @@
-import { Document, Model, Types } from 'mongoose';
+import { Types } from 'mongoose';
 
 export enum productStatus {
     INVENTORY = 1,
@@ -73,14 +73,14 @@ export interface ProductInterface {
     identificationPhoto: string;
 
     /*
-    Future plan is to let customer provide any kind of description
+    Future plan is to let seller provide any kind of description
     like text, image, audio, video etc.
     and then we will parse that description and provide description
     which will be shown to customer and also title accordingly.
     since its a tough task and require lot of setup it is currently
     on hold Sunday 7 August 2022
     */
-    descriptionGivenByCustomer: string;
+    descriptionGivenBySeller: string;
     descriptionShownToCustomer: string[];
     titleGenerated: string;
 

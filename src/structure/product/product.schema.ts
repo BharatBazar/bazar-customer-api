@@ -14,7 +14,7 @@ mongoose.model(
             customerIdentificationPhoto: String,
             identificationPhoto: String,
 
-            descriptionGivenByCustomer: String,
+            descriptionGivenBySeller: String,
             descriptionShownToCustomer: String,
             titleGenerated: String,
             showPrice: { type: Boolean, default: false },
